@@ -1,0 +1,32 @@
+Session 1, 13.10.2026
+
+Today I have been learning the basics, which were all new to me. We explored a code with Arduino, 
+which made a light turn on in different time distances. 
+We have used the microcontroller to connect to a board. The Coding with CC+ differs from python – 
+and one very important step is to put a semikolon behind every command. 
+This is the first time I have ever used such materials, so I had to figure out, how it works. 
+The Breadboard is used for an electrical circuit, that is created through connecting the breadboard 
+and the microcontroller with cables (+ and -). For the blinking lamp we have used an LED with 
+plus and minus as well as a restricter to protect the LED lamp from too much voltage. For this specific 
+scenario we have used this code:
+
+void setup() {
+  // put your setup code here, to run once:
+  pinMode(13, OUTPUT);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  digitalWrite(13, LOW);//0-0v, off
+  delay(1000);//1 second
+
+  digitalWrite(13, HIGH);//1-5v, on
+  delay(1000);//1 second
+}
+
+We have created a loop to make the lamp blink and experimented with different times to turn the lamp on and off. 
+For me it was for about 15, where I wasn't able to tell anymore that the lamp is even blinking. 
+This was very interesting to learn about how power works and how an electrical cycle works.
+
+In the README I will include some pictures as well. 
+
