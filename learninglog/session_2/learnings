@@ -18,7 +18,31 @@ We experimented with powering the breadboard using an external power supply modu
 Then we also noticed that different colored LEDs (like green) require different forward voltages and energy levels. 
 This was very interesting to see, I had to cover my eyes because some LEDs were shining so bright.
 
-Also we wired up an RGB LED using three separate resistors and learned how to mix colors using PWM (analogWrite()) and duty cycles.
+Also we wired up an RGB LED using three separate resistors and learned how to mix colors using (analogWrite()) and duty cycles.
 I made purple and although I had some struggles at first with my code, I managed to finish it. 
+
+For defining pins as variables and controlling multiple LEDs, we used code structures like this:
+
+const int redLED = 2;
+
+void setup() {
+  pinMode(redLED, OUTPUT);
+}
+
+void loop() {
+  digitalWrite(redLED, HIGH);
+  delay(1000);
+  digitalWrite(redLED, LOW);
+  delay(1000);
+}
+
+
+And for the RGB LED color-mixing function we looked at:
+
+void setRGB (int redValue, int greenValue, int blueValue) {
+  analogWrite(9, redValue);
+  analogWrite(10, greenValue);
+  analogWrite(11, blueValue);
+}
 
 In the PICTURES.md I will include some pictures as well.
