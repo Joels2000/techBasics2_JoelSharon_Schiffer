@@ -1,1 +1,24 @@
+Session 2, 20.10.2026
 
+Today we continued exploring electronic components and circuit configurations. We looked closer at how resistors work, 
+using the color code bands (like 4-band or 5-band codes) to read their values, and discussed surface mount devices (SMD).
+We also learned more about power calculations and circuit types:
+
+- Ohm's Law: V = I × R (Voltage equals current times resistance)
+- Power Law: P = I × V (Power equals current times voltage)
+
+Although I have already heard about the differences between each, I haven't really looked further into it beforehand.
+So this was new to me.
+
+Circuits: We compared series circuits (where components share the same line and divide voltage) and 
+parallel circuits (where every device receives full source voltage independently). 
+Here I started to understand how it power works.
+
+We experimented with powering the breadboard using an external power supply module and different LEDs. 
+Then we also noticed that different colored LEDs (like green) require different forward voltages and energy levels. 
+This was very interesting to see, I had to cover my eyes because some LEDs were shining so bright.
+
+Also we wired up an RGB LED using three separate resistors and learned how to mix colors using PWM (analogWrite()) and duty cycles.
+I made purple and although I had some struggles at first with my code, I managed to finish it. 
+
+In the PICTURES.md I will include some pictures as well.
